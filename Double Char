@@ -1,0 +1,7 @@
+def double_char(s):
+    double = '';
+    
+    for x in s:
+        double += x + x
+    
+    return double
