@@ -1,0 +1,11 @@
+def accum(s):
+    output = []
+    count = 1
+    
+    for x in s:
+        innerStr = x * count
+        innerStr = innerStr.lower()
+        output.append(innerStr.capitalize())
+        count += 1
+    
+    return '-'.join(output)
