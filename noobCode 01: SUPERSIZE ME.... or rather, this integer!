@@ -1,0 +1,10 @@
+# Write a function that rearranges an integer into its largest possible value.
+
+# super_size(123456) # 654321
+# super_size(105)    # 510
+# super_size(12)     # 21
+
+def super_size(n):
+    arr = list(str(n))
+    arr.sort(reverse=True)
+    return int(''.join(arr))
