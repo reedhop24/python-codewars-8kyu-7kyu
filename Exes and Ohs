@@ -1,0 +1,20 @@
+# Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The 
+# string can contain any char.
+
+# Examples input/output:
+
+# XO("ooxx") => true
+# XO("xooxx") => false
+# XO("ooxXm") => true
+
+ef xo(s):
+    one = 0
+    two = 0
+    
+    for x in s.lower():
+        if x == 'x':
+            one += 1
+        elif x == 'o':
+            two += 1
+    
+    return True if one == two else False
