@@ -1,0 +1,8 @@
+def reverse_words(text):
+    words = text.split(' ')
+    output = []
+    
+    for x in words:
+        output.append(x[::-1])
+    
+    return ' '.join(output)
