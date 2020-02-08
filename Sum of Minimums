@@ -1,0 +1,5 @@
+def sum_of_minimums(numbers):
+    sumOfMin = 0
+    for x in numbers:
+        sumOfMin += min(x)
+    return sumOfMin
