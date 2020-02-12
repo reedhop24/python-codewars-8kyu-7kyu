@@ -1,0 +1,2 @@
+def is_anagram(test, original):
+    return True if ''.join(sorted(list(test.lower()))) == ''.join(sorted(list(original.lower()))) else False
