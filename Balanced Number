@@ -1,0 +1,23 @@
+import math
+
+def balanced_num(number):
+    arr = list(str(number))
+    count = 0
+    side1 = 0
+    side2 = 0
+    
+    for x in arr:
+        if len(arr) % 2 != 0:
+            if count < math.floor(len(arr)/2): 
+                side1 += int(x)
+            elif count > math.floor(len(arr)/2):
+                side2 += int(x)
+            count += 1
+        else:
+            if count < math.floor(len(arr)/2) - 1: 
+                side1 += int(x)
+            elif count > math.floor(len(arr)/2):
+                side2 += int(x)
+            count += 1
+
+    return 'Balanced' if side1 == side2 else 'Not Balanced'
