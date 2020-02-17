@@ -1,0 +1,7 @@
+def dont_give_me_five(start,end):
+    n = 0
+    while (start <= end):
+        if '5' not in str(start):
+            n += 1
+        start += 1
+    return n
