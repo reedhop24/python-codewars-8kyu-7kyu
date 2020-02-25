@@ -1,0 +1,17 @@
+# My solution:
+def longest(s1, s2):
+    str = ''
+    for x in s1 :
+        if(x not in str):
+            str += x
+    
+    for y in s2 :
+        if(y not in str):
+            str += y
+            
+    return ''.join(sorted(str))
+ 
+# Better solution:
+
+def longest(s1, s2):
+    return ''.join(sorted(set(s1 + s2)))
