@@ -1,0 +1,14 @@
+# My solution:
+
+def in_asc_order(arr):
+    last = arr[0]
+    for(val) in arr:
+        if(last > val):
+            return False
+        last = val
+    return True
+
+# Better solution:
+
+def in_asc_order(arr):
+    return arr == sorted(arr)
