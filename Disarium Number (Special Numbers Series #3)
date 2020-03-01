@@ -1,0 +1,5 @@
+def disarium_number(number):
+    isDis = 0
+    for x in range(0, len(str(number))):
+        isDis += pow(int(str(number)[x]), x+1)
+    return 'Disarium !!' if isDis == number else 'Not !!'
