@@ -1,0 +1,3 @@
+def has_unique_chars(string):
+    arr = [char for char in string]
+    return True if sorted(arr) == sorted(set(arr)) else False
