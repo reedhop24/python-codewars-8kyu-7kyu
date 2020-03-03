@@ -1,0 +1,9 @@
+def max_gap(numbers):
+    maximum = 0
+    last = 0
+    for i, j in enumerate(sorted(numbers)):
+        if(i > 0):
+            if(j-last > maximum):
+                maximum = j-last
+        last = j
+    return maximum
