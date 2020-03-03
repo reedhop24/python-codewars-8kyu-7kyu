@@ -1,0 +1,8 @@
+def row_weights(array):
+    output = [0, 0]
+    for i, j in enumerate(array):
+        if i % 2 == 0:
+            output[0] += j
+        else:
+            output[1] += j
+    return output[0], output[1]
