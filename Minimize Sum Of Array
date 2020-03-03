@@ -1,0 +1,9 @@
+def min_sum(arr):
+    sort = sorted(arr)
+    length = len(sort)-1
+    total = 0
+    for i,j in enumerate(sort):
+        if(i == len(sort)/2):
+            return total
+        total += j * sort[length]
+        length -= 1
