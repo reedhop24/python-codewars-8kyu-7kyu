@@ -1,0 +1,7 @@
+import re
+def count_letters_and_digits(s):
+    count = 0
+    for x in s:
+        if re.match('[a-zA-Z0-9]', x):
+            count += 1
+    return count
