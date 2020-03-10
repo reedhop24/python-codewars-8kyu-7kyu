@@ -1,0 +1,11 @@
+def growing_plant(upSpeed, downSpeed, desiredHeight):
+    counter = 1
+    total_height = 0
+    while total_height < desiredHeight :
+        total_height += upSpeed
+        if total_height >= desiredHeight:
+            break
+        else:
+            counter += 1
+        total_height -= downSpeed
+    return counter
