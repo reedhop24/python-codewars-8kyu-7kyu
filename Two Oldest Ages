@@ -1,0 +1,3 @@
+def two_oldest_ages(ages):
+    two_oldest = sorted(ages)
+    return [two_oldest[len(two_oldest)-2],two_oldest[len(two_oldest)-1]]
