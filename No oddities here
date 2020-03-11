@@ -1,0 +1,2 @@
+def no_odds(values):
+    return list(filter(lambda x: x % 2 == 0, values))
