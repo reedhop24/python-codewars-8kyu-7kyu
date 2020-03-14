@@ -1,0 +1,15 @@
+def find_it(seq):
+    num_dict = {}
+    for x,y in enumerate(seq):
+        if y in num_dict:
+            count = num_dict.get(y)
+            count += 1
+            num_dict.update({y: count})
+        else:
+            num_dict.update({y: 0})
+    
+    find = num_dict.items()
+    
+    for x in find:
+        if x[1] % 2 == 0:
+            return x[0]
