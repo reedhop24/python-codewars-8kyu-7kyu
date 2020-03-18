@@ -1,0 +1,7 @@
+def spin_words(sentence):
+    arr = sentence.split()
+    for x, y in enumerate(arr):
+        if len(y) >= 5:
+            arr[x] = ''.join(reversed(y))
+    return ' '.join(arr)
+    
