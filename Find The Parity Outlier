@@ -1,0 +1,13 @@
+def find_outlier(integers):
+    oddCount = 0
+    evenCount = 0
+    lastEven = 0
+    lastOdd = 0
+    for x in integers:
+        if x % 2 == 0:
+            evenCount += 1
+            lastEven = x
+        else:
+            oddCount += 1
+            lastOdd = x
+    return lastEven if evenCount < oddCount else lastOdd
