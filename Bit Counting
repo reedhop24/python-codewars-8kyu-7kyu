@@ -1,0 +1,11 @@
+# my solution:
+  def countBits(n):
+    bits = 0
+    for x in "{0:b}".format(n):
+        if x == '1':
+            bits += 1
+    return bits
+    
+# better solution:
+  def countBits(n):
+    return bin(n).count("1")
