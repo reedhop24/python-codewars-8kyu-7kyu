@@ -1,0 +1,8 @@
+def duplicate_count(text):
+    count = 0
+    lower = sorted(text.lower())
+    for x, y in enumerate(lower):
+        if x < len(text)-1:
+            if y == lower[x+1] and y != lower[x-1]:
+                count += 1
+    return count
