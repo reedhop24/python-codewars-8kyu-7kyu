@@ -1,0 +1,25 @@
+# My solution:
+
+def is_valid_walk(walk):
+    if len(walk) != 10:
+        return False
+    
+    north = 0
+    east = 0
+    
+    for x in walk:
+        if x == 'n':
+            north += 1
+        elif x == 's':
+            north -= 1
+        elif x == 'e':
+            east += 1
+        else:
+            east -= 1
+    
+    return True if north == 0 and east == 0 else False
+    
+   # Better solution:
+   
+   def is_valid_walk(walk):
+    return len(walk) == 10 and walk.count('n') == walk.count('s') and walk.count('e') == walk.count('w')
